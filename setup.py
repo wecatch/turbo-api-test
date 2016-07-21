@@ -24,5 +24,4 @@ setup(
     description="Turbo_api_test is a framework/tool for api test",
     packages=find_packages(),
     install_requires=install_requires,
-    scripts=['turbo_api_test/bin/turbo_api_test']
 )

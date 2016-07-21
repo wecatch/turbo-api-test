@@ -309,6 +309,7 @@ repos:
     - name: default_branch
       type: string
 
+
 owner:
   name: repos_user
   description: repos user
@@ -318,7 +319,7 @@ owner:
       type: string
 
     - name: id
-      type: string
+      type: integer
 
     - name: avatar_url
       type: string
@@ -363,4 +364,4 @@ owner:
       type: string
 
     - name: site_admin
-      type: string
+      type: boolean

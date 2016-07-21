@@ -1,0 +1,366 @@
+user:
+  name: github_user
+  description: github user
+  group: users
+  keys:
+    - name: login
+      type: string 
+
+    - name: id
+      type: integer 
+
+    - name: avatar_url
+      type: string 
+
+    - name: gravatar_id
+      type: string 
+
+    - name: url
+      type: string 
+
+    - name: html_url
+      type: string 
+
+    - name: followers_url
+      type: string 
+
+    - name: following_url
+      type: string 
+
+    - name: gists_url
+      type: string 
+
+    - name: starred_url
+      type: string 
+
+    - name: subscriptions_url
+      type: string 
+
+    - name: organizations_url
+      type: string 
+
+    - name: repos_url
+      type: string 
+
+    - name: events_url
+      type: string 
+
+    - name: received_events_url
+      type: string 
+
+    - name: type
+      type: string
+      default: "User"
+
+    - name: site_admin
+      type: boolean 
+
+    - name: name
+      type: string 
+
+    - name: company
+      type: string 
+
+    - name: blog
+      type: string 
+
+    - name: location
+      type: string 
+
+    - name: email
+      type: string 
+
+    - name: hireable
+      type: boolean 
+
+    - name: bio
+      type: string
+      required: false
+      default: null 
+
+    - name: public_repos
+      type: integer 
+
+    - name: public_gists
+      type: integer 
+
+    - name: followers
+      type: integer 
+
+    - name: following
+      type: integer 
+
+    - name: created_at
+      type: string 
+
+    - name: updated_at
+      type: string 
+
+
+repos:
+  name: github_repos
+  description: github repos
+  group: users
+  keys:
+    - name: id
+      type: string
+
+    - name: name
+      type: string
+
+    - name: full_name
+      type: string
+
+    - name: owner
+      type: object
+      $ref: '#/definitions/owner'
+
+    - name: private
+      type: boolean
+
+    - name: html_url
+      type: string
+
+    - name: description
+      type: string
+
+    - name: fork
+      type: boolean
+
+    - name: url
+      type: string
+
+    - name: forks_url
+      type: string
+
+    - name: keys_url
+      type: string
+
+    - name: collaborators_url
+      type: string
+
+    - name: teams_url
+      type: string
+
+    - name: hooks_url
+      type: string
+
+    - name: issue_events_url
+      type: string
+
+    - name: events_url
+      type: string
+
+    - name: assignees_url
+      type: string
+
+    - name: branches_url
+      type: string
+
+    - name: tags_url
+      type: string
+
+    - name: blobs_url
+      type: string
+
+    - name: git_tags_url
+      type: string
+
+    - name: git_refs_url
+      type: string
+
+    - name: trees_url
+      type: string
+
+    - name: statuses_url
+      type: string
+
+    - name: languages_url
+      type: string
+
+    - name: stargazers_url
+      type: string
+
+    - name: contributors_url
+      type: string
+
+    - name: subscribers_url
+      type: string
+
+    - name: subscription_url
+      type: string
+
+    - name: commits_url
+      type: string
+
+    - name: git_commits_url
+      type: string
+
+    - name: comments_url
+      type: string
+
+    - name: issue_comment_url
+      type: string
+
+    - name: contents_url
+      type: string
+
+    - name: compare_url
+      type: string
+
+    - name: merges_url
+      type: string
+
+    - name: archive_url
+      type: string
+
+    - name: downloads_url
+      type: string
+
+    - name: issues_url
+      type: string
+
+    - name: pulls_url
+      type: string
+
+    - name: milestones_url
+      type: string
+
+    - name: notifications_url
+      type: string
+
+    - name: labels_url
+      type: string
+
+    - name: releases_url
+      type: string
+
+    - name: deployments_url
+      type: string
+
+    - name: created_at
+      type: string
+
+    - name: updated_at
+      type: string
+
+    - name: pushed_at
+      type: string
+
+    - name: git_url
+      type: string
+
+    - name: ssh_url
+      type: string
+
+    - name: clone_url
+      type: string
+
+    - name: svn_url
+      type: string
+
+    - name: homepage
+      type: string
+
+    - name: size
+      type: integer
+
+    - name: stargazers_count
+      type: integer
+
+    - name: watchers_count
+      type: integer
+
+    - name: language
+      type: string
+
+    - name: has_issues
+      type: boolean
+
+    - name: has_downloads
+      type: boolean
+
+    - name: has_wiki
+      type: boolean
+
+    - name: has_pages
+      type: boolean
+
+    - name: forks_count
+      type: integer
+
+    - name: mirror_url
+      type: string
+      default: null
+      required: false
+
+    - name: open_issues_count
+      type: integer
+
+    - name: forks
+      type: integer
+
+    - name: open_issues
+      type: integer
+
+    - name: watchers
+      type: integer
+
+    - name: default_branch
+      type: string
+
+owner:
+  name: repos_user
+  description: repos user
+  group: users
+  keys:
+    - name: login
+      type: string
+
+    - name: id
+      type: string
+
+    - name: avatar_url
+      type: string
+
+    - name: gravatar_id
+      type: string
+
+    - name: url
+      type: string
+
+    - name: html_url
+      type: string
+
+    - name: followers_url
+      type: string
+
+    - name: following_url
+      type: string
+
+    - name: gists_url
+      type: string
+
+    - name: starred_url
+      type: string
+
+    - name: subscriptions_url
+      type: string
+
+    - name: organizations_url
+      type: string
+
+    - name: repos_url
+      type: string
+
+    - name: events_url
+      type: string
+
+    - name: received_events_url
+      type: string
+
+    - name: type
+      type: string
+
+    - name: site_admin
+      type: string

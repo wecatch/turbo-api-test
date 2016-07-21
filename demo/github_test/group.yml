@@ -1,0 +1,50 @@
+group: github
+basePath: ''
+parameters:
+  path:
+    login: zhyq0826
+paths:
+  - name: user
+    path: /users/{login}
+    skip: false
+    methods:
+      get:
+        description: return {login} user info
+        parameters:
+          - name: login
+            in: path
+            type: string
+            enum: ['zhyq0826']
+            required: true
+            allowEmptyValue: false
+            description: "user login name"
+        responses:
+          200:
+            type: object
+            required: true
+            allowEmptyValue: false
+            default: {}
+            $ref: '#/definitions/user'
+  - name: repos
+    path: /users/{login}/repos
+    skip: false
+    methods:
+      get:
+        description: return {login} user info
+        parameters:
+          - name: login
+            in: path
+            type: string
+            enum: ['zhyq0826']
+            required: true
+            allowEmptyValue: false
+            description: "user login name"
+        responses:
+          200:
+            type: array
+            required: true
+            allowEmptyValue: true
+            default: []
+            items:
+              type: object
+              $ref: '#/definitions/repos'

@@ -1,0 +1,33 @@
+# type int string float list dict bool
+# value: null, true, false
+type:
+  - integer
+  - long
+  - float
+  - string
+  - byte
+  - binary
+  - array
+  - object
+  - boolean
+  - date
+  - datetime
+
+value:
+  - null
+  - true
+  - false
+
+parameter:
+  - path
+  - query
+  - formData
+  - headers
+
+hosts:
+  - host: https://api.github.com
+    basePath: ''
+    version: v1
+    description: github api service
+
+

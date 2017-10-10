@@ -68,7 +68,9 @@ user:
       type: string 
 
     - name: email
-      type: string 
+      type: string
+      required: false
+      default: null
 
     - name: hireable
       type: boolean 
